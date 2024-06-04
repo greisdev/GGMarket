@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #303131;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 33px 20px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+    /* Remova a margem direita */
+    /* margin-right: 20px; */
+    /* Adicione estas linhas */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    /* Defina a largura desejada para o campo de busca */
+    padding: 5px;
+    /* Ajuste o preenchimento conforme necessário */
+    font-size: 15px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 5px;
+    /* Adicione bordas arredondadas se desejar */
+    border: 1px solid #ccc;
+    /* Adicione uma borda para fins de estilo */
+}
+
+.search-container button {
+    padding: 8px;
+    margin-top: 2px;
+    background-color: #ccc;
+    /* Define o fundo como transparente */
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para os ícones na navbar */
+.navbar img {
+    width: 30px;
+    /* Tamanho dos ícones */
+    height: auto;
+    /* Altura automática */
+    margin-right: 10px;
+    /* Espaçamento à direita entre os ícones */
+}
+
+/* Estilo para o texto de boas-vindas na navbar */
+.usuario h1 {
+    color: white;
+    /* Cor do texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+}
+
+/* Ajustar tamanho do carrinho */
+.cart img {
+    width: 40px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b5859;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.white-box {
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 22px 2px black;
+    width: 90%;
+    /* Ajuste para ocupar 90% da largura disponível */
+    max-width: 1200px;
+    /* Definindo uma largura máxima para a caixa */
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Permitindo que os itens se ajustem automaticamente */
+    grid-gap: 20px;
+    /* Espaçamento entre os itens */
+}
+
+.item {
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    /* Evita que a sombra se estenda além dos limites do item */
+}
+
+.product {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 280px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Evita que a imagem ultrapasse os limites do contêiner */
+}
+
+
+
+.product img {
+    height: 100%;
+    /* Garantindo que a imagem ocupe todo o espaço disponível */
+    width: auto;
+    /* Ajustando a largura automaticamente */
+    object-fit: cover;
+    /* Redimensiona a imagem para preencher o contêiner */
+}
+
+.item h3 {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.item span {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.item a {
+    display: block;
+    background-color: #6ba500;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    /* Alinhar o texto ao centro */
+    text-decoration: none;
+    /* Remover sublinhado do link */
+    margin-top: 10px;
+    /* Adicionar espaço acima do botão */
+    width: 100%;
+    /* Garantir que o botão ocupe toda a largura do item */
+}
+
+.item a:hover {
+    background-color: #4b7700;
+}
+
+.cart {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+
+.cart img {
+    width: 40px;
+    /* Aumentar o tamanho do ícone do carrinho */
+    height: auto;
+}
+
+.user {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.user img {
+    width: 30px;
+    /* Ajuste o tamanho do ícone do usuário se necessário */
+    height: auto;
+}
+
+.usuario {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+.logout {
+    position: absolute;
+    top: 13px;
+    right: 80px;
+}
+
+.logout img {
+    width: 30px;
+    /* Ajuste o tamanho do ícone de logout se necessário */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        /* Reduzindo o espaço ao redor do contêiner */
+    }
+
+    .white-box {
+        width: 100%;
+        /* Utilizando toda a largura disponível */
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Ajustando os itens para dispositivos menores */
+    }
+
+    .navbar {
+        padding: 10px;
+        /* Reduzir o padding para dispositivos menores */
+    }
+
+    .search-container {
+        position: relative;
+        /* Alterar para posição relativa para alinhar corretamente em dispositivos menores */
+        top: auto;
+        /* Remover o posicionamento absoluto */
+        left: auto;
+        /* Remover o posicionamento absoluto */
+        transform: none;
+        /* Remover a transformação */
+        margin-right: 10px;
+        /* Adicionar margem direita para separar do ícone do carrinho */
+    }
+
+    .navbar img {
+        width: 30px;
+        /* Reduzir o tamanho dos ícones */
+        height: auto;
+    }
+
+    .usuario h1 {
+        font-size: 14px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    .cart img,
+    .user img,
+    .logout img {
+        width: 25px;
+        /* Reduzir o tamanho do ícone */
+        height: auto;
+    }
+
+    .usuario {
+        top: 15px;
+        left: 40px;
+        font-size: 14px;
+    }
+
+    .logout {
+        right: 60px;
+    }
+}

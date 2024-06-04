@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 70px;
+    /* Espaço para a navbar fixa */
+    background-color: #5b5859;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Altura mínima para ocupar a tela inteira */
+}
+
+.navbar {
+    background-color: #303131;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .back-button {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar .back-button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 22px 2px black;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    /* Ajuste no padding */
+    text-align: left;
+}
+
+th {
+    background-color: #1d006d;
+    color: white;
+}
+
+.btn-editar,
+.btn-excluir {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+    /* Espaço entre os botões */
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+}
+
+.btn-excluir {
+    background-color: #f44336;
+}
+
+.btn-editar:hover {
+    background-color: #45a049;
+}
+
+.btn-excluir:hover {
+    background-color: #d32f2f;
+}
+
+.gerenciamento-produtos-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #1d006d;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.gerenciamento-produtos-link:hover {
+    background-color: #14004b;
+}
